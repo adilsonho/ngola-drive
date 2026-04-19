@@ -3,227 +3,325 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>N'Gola Drive — A Super-App de Mobilidade de Angola</title>
-  <meta name="description" content="Peça um Bumbá, alugue uma viatura ou ganhe dinheiro como motorista. A primeira super-app angolana de mobilidade e aluguer de carros P2P.">
+
+  <!-- Primary SEO -->
+  <title>N'Gola Drive — A Super-App de Mobilidade de Angola | Bumbá</title>
+  <meta name="description" content="Peça um Bumbá, alugue uma viatura ou ganhe dinheiro como motorista. A primeira super-app angolana de mobilidade e aluguer de carros P2P. Disponível em Luanda e Angola.">
+  <meta name="keywords" content="N'Gola Drive, Bumbá, app mobilidade Angola, táxi Luanda, aluguer carro Angola, motorista Angola, ride-hailing Angola, Multicaixa Express">
+  <meta name="author" content="N'Gola Drive">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="theme-color" content="#C41E24">
+  <link rel="canonical" href="https://www.ngola-drive.ao/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.ngola-drive.ao/">
+  <meta property="og:title" content="N'Gola Drive — A Super-App de Mobilidade de Angola">
+  <meta property="og:description" content="Peça um Bumbá, alugue uma viatura ou ganhe dinheiro como motorista. A primeira super-app angolana de mobilidade e aluguer de carros P2P.">
+  <meta property="og:image" content="https://www.ngola-drive.ao/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="N'Gola Drive — Super-App de Mobilidade de Angola">
+  <meta property="og:locale" content="pt_AO">
+  <meta property="og:site_name" content="N'Gola Drive">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@NGolaDriver">
+  <meta name="twitter:title" content="N'Gola Drive — A Super-App de Mobilidade de Angola">
+  <meta name="twitter:description" content="Peça um Bumbá, alugue uma viatura ou ganhe dinheiro como motorista. A primeira super-app angolana de mobilidade e aluguer de carros P2P.">
+  <meta name="twitter:image" content="https://www.ngola-drive.ao/assets/img/og-image.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Styles -->
   <link rel="stylesheet" href="css/style.css">
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.ngola-drive.ao/#organization",
+        "name": "N'Gola Drive",
+        "url": "https://www.ngola-drive.ao/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.ngola-drive.ao/assets/img/logo.png"
+        },
+        "description": "A primeira super-app angolana de mobilidade e aluguer de carros P2P.",
+        "foundingLocation": {
+          "@type": "Place",
+          "name": "Luanda, Angola"
+        },
+        "sameAs": [
+          "https://www.facebook.com/NGolaDriver",
+          "https://www.instagram.com/NGolaDriver",
+          "https://www.tiktok.com/@NGolaDriver"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.ngola-drive.ao/#website",
+        "url": "https://www.ngola-drive.ao/",
+        "name": "N'Gola Drive",
+        "publisher": { "@id": "https://www.ngola-drive.ao/#organization" },
+        "inLanguage": "pt-AO"
+      },
+      {
+        "@type": "MobileApplication",
+        "name": "N'Gola Drive",
+        "operatingSystem": "iOS, Android",
+        "applicationCategory": "TransportationApplication",
+        "description": "Peça um Bumbá, alugue uma viatura ou ganhe dinheiro como motorista. Pagamentos via Multicaixa Express e Unitel Money.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "AOA"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "ratingCount": "1240",
+          "bestRating": "5"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
+  <!-- Skip navigation for accessibility -->
+  <a href="#main-content" class="skip-nav">Ir para o conteúdo principal</a>
+
   <!-- NAVBAR -->
-  <nav class="navbar">
+  <nav class="navbar" role="navigation" aria-label="Navegação principal">
     <div class="navbar-container">
-      <a href="index.html" class="navbar-logo">
-        <div class="logo-icon">NG</div>
+      <a href="index.html" class="navbar-logo" aria-label="N'Gola Drive — Página inicial">
+        <div class="logo-icon" aria-hidden="true">NG</div>
         <div class="logo-text">N'Gola <span>Drive</span></div>
       </a>
-      <ul class="navbar-links">
-        <li><a href="index.html" class="active">Início</a></li>
-        <li><a href="motorista.html">Motorista</a></li>
-        <li><a href="proprietario.html">Proprietário</a></li>
-        <li><a href="aluguer.html">Aluguer</a></li>
-        <li><a href="seguranca.html">Segurança</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="motorista.html" class="navbar-cta">Começar a Ganhar</a></li>
+      <ul class="navbar-links" id="navbar-links" role="menubar" aria-label="Menu principal">
+        <li role="none"><a href="index.html" class="active" role="menuitem" aria-current="page">Início</a></li>
+        <li role="none"><a href="motorista.html" role="menuitem">Motorista</a></li>
+        <li role="none"><a href="proprietario.html" role="menuitem">Proprietário</a></li>
+        <li role="none"><a href="aluguer.html" role="menuitem">Aluguer</a></li>
+        <li role="none"><a href="seguranca.html" role="menuitem">Segurança</a></li>
+        <li role="none"><a href="sobre.html" role="menuitem">Sobre</a></li>
+        <li role="none"><a href="motorista.html" class="navbar-cta" role="menuitem">Começar a Ganhar</a></li>
       </ul>
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="navbar-links">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
     </div>
   </nav>
+  <div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-bg">
-      <img src="assets/img/hero-main.png" alt="Luanda">
-    </div>
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <div class="hero-text">
-        <h1>A tua viagem<br>começa com<br><span class="highlight">Bumbá</span></h1>
-        <p>A primeira super-app angolana de mobilidade. Pede uma corrida, aluga uma viatura ou ganha dinheiro como motorista. Tudo numa única aplicação.</p>
-        <div class="hero-buttons">
-          <a href="#download" class="btn btn-primary btn-lg">
-            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
-            App Store
-          </a>
-          <a href="#download" class="btn btn-secondary btn-lg">
-            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M3.18 23.76c-.36-.17-.58-.52-.58-.92V1.16c0-.4.22-.75.58-.92l11.07 11.76L3.18 23.76zm.82-22.4L14.68 12 4 22.64V1.36zm16.16 9.52L17.3 9.3l-2.18 2.7 2.18 2.7 2.86-1.58c.54-.3.54-1.04 0-1.34zM4.82 1.04L15.5 11.3 5.64.36 4.82 1.04zM15.5 12.7L4.82 22.96l.82.68L15.5 12.7z"/></svg>
-            Google Play
-          </a>
-        </div>
-        <div class="hero-stats">
-          <div class="hero-stat">
-            <h3><span data-count="35" data-suffix="M">0</span></h3>
-            <p>Angolanos</p>
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="hero" aria-label="Secção principal">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="assets/img/hero-main.png" alt="" role="presentation" loading="eager" width="1920" height="1080">
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>A tua viagem<br>começa com<br><span class="highlight">Bumbá</span></h1>
+          <p>A primeira super-app angolana de mobilidade. Pede uma corrida, aluga uma viatura ou ganha dinheiro como motorista. Tudo numa única aplicação.</p>
+          <div class="hero-buttons">
+            <a href="#download" class="btn btn-primary btn-lg" aria-label="Descarregar na App Store">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+              App Store
+            </a>
+            <a href="#download" class="btn btn-secondary btn-lg" aria-label="Descarregar no Google Play">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.18 23.76c-.36-.17-.58-.52-.58-.92V1.16c0-.4.22-.75.58-.92l11.07 11.76L3.18 23.76zm.82-22.4L14.68 12 4 22.64V1.36zm16.16 9.52L17.3 9.3l-2.18 2.7 2.18 2.7 2.86-1.58c.54-.3.54-1.04 0-1.34zM4.82 1.04L15.5 11.3 5.64.36 4.82 1.04zM15.5 12.7L4.82 22.96l.82.68L15.5 12.7z"/></svg>
+              Google Play
+            </a>
           </div>
-          <div class="hero-stat">
-            <h3><span data-count="10" data-suffix="%">0</span></h3>
-            <p>Comissão</p>
-          </div>
-          <div class="hero-stat">
-            <h3><span data-count="4">0</span></h3>
-            <p>Idiomas</p>
-          </div>
-        </div>
-      </div>
-      <div class="hero-image">
-        <img src="assets/img/mock-phone.svg" alt="N'Gola Drive App">
-      </div>
-    </div>
-  </section>
-
-  <!-- FEATURES -->
-  <section class="section section-dark" id="features">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="tag">Funcionalidades</span>
-        <h2>Tudo o que precisas, numa app</h2>
-        <p>Do Bumbá ao aluguer de viaturas, passando pela carteira digital com Multicaixa Express.</p>
-      </div>
-      <div class="features-grid">
-        <div class="feature-card reveal">
-          <div class="feature-icon">🚗</div>
-          <h3>Bumbá (Corrida)</h3>
-          <p>Pede uma corrida em segundos. O motorista mais próximo chega até ti com preço estimado antes de confirmar. Sem surpresas.</p>
-        </div>
-        <div class="feature-card reveal">
-          <div class="feature-icon">🔑</div>
-          <h3>Aluguer P2P</h3>
-          <p>Aluga uma viatura directamente de proprietários verificados. SUVs, sedans e pick-ups disponíveis por dia ou semana.</p>
-        </div>
-        <div class="feature-card reveal">
-          <div class="feature-icon">💳</div>
-          <h3>Carteira Digital</h3>
-          <p>Recarrega via Multicaixa Express ou Unitel Money. Paga corridas e alugueres sem dinheiro físico. Tudo em Kwanzas.</p>
-        </div>
-        <div class="feature-card reveal">
-          <div class="feature-icon">🛡️</div>
-          <h3>Segurança Total</h3>
-          <p>Verificação de BI com selfie, rastreamento GPS em tempo real, geofencing anti-roubo e botão de emergência SOS.</p>
-        </div>
-        <div class="feature-card reveal">
-          <div class="feature-icon">🌍</div>
-          <h3>4 Idiomas</h3>
-          <p>Disponível em Português, Inglês, Chinês e Francês. Pensado para angolanos e a comunidade de expatriados.</p>
-        </div>
-        <div class="feature-card reveal">
-          <div class="feature-icon">📊</div>
-          <h3>Painel do Proprietário</h3>
-          <p>Gere a tua frota, acompanha rendimentos, aprova reservas e controla o estado das tuas viaturas em tempo real.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOW IT WORKS -->
-  <section class="section" id="como-funciona">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="tag">Como Funciona</span>
-        <h2>Em 4 passos simples</h2>
-        <p>Do download à primeira viagem em menos de 5 minutos.</p>
-      </div>
-      <div class="steps-grid">
-        <div class="step-card reveal">
-          <div class="step-number">1</div>
-          <h3>Descarrega a App</h3>
-          <p>Disponível na App Store e Google Play. Registo rápido com número angolano.</p>
-        </div>
-        <div class="step-card reveal">
-          <div class="step-number">2</div>
-          <h3>Verifica a Identidade</h3>
-          <p>Envia foto do BI (frente e verso) e uma selfie para garantir a segurança de todos.</p>
-        </div>
-        <div class="step-card reveal">
-          <div class="step-number">3</div>
-          <h3>Recarrega a Carteira</h3>
-          <p>Adiciona saldo via Multicaixa Express ou Unitel Money. Sem cartão de crédito necessário.</p>
-        </div>
-        <div class="step-card reveal">
-          <div class="step-number">4</div>
-          <h3>Bumbá!</h3>
-          <p>Pede uma corrida ou aluga uma viatura. O preço é mostrado antes de confirmar.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS -->
-  <section class="section section-dark">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="tag">Depoimentos</span>
-        <h2>O que dizem os nossos utilizadores</h2>
-      </div>
-      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
-        <div class="testimonial-card reveal">
-          <div class="stars">★★★★★</div>
-          <blockquote>"Finalmente uma app angolana que funciona! O Bumbá chega rápido e pago com Multicaixa Express sem complicações."</blockquote>
-          <div class="testimonial-author">
-            <div class="avatar">AM</div>
-            <div>
-              <div class="name">Ana Maria</div>
-              <div class="role">Passageira, Talatona</div>
+          <div class="hero-stats" aria-label="Estatísticas">
+            <div class="hero-stat">
+              <h3><span data-count="35" data-suffix="M">0</span></h3>
+              <p>Angolanos</p>
+            </div>
+            <div class="hero-stat">
+              <h3><span data-count="10" data-suffix="%">0</span></h3>
+              <p>Comissão</p>
+            </div>
+            <div class="hero-stat">
+              <h3><span data-count="4">0</span></h3>
+              <p>Idiomas</p>
             </div>
           </div>
         </div>
-        <div class="testimonial-card reveal">
-          <div class="stars">★★★★★</div>
-          <blockquote>"Coloquei o meu Hilux para alugar e já recuperei o investimento em 3 meses. A verificação de identidade dá-me segurança."</blockquote>
-          <div class="testimonial-author">
-            <div class="avatar">JC</div>
-            <div>
-              <div class="name">João Carlos</div>
-              <div class="role">Proprietário, Viana</div>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card reveal">
-          <div class="stars">★★★★★</div>
-          <blockquote>"Trabalho quando quero e ganho mais de 40 mil Kz por dia. A comissão de 10% é a mais baixa do mercado."</blockquote>
-          <div class="testimonial-author">
-            <div class="avatar">PM</div>
-            <div>
-              <div class="name">Pedro Manuel</div>
-              <div class="role">Motorista, Luanda</div>
-            </div>
-          </div>
+        <div class="hero-image" aria-hidden="true">
+          <img src="assets/img/mock-phone.svg" alt="Interface da aplicação N'Gola Drive" width="400" height="600" loading="lazy">
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CTA DOWNLOAD -->
-  <section class="section" id="download">
-    <div class="container">
-      <div class="cta-banner reveal">
-        <h2>Pronto para começar?</h2>
-        <p>Descarrega o N'Gola Drive agora e faz parte da revolução da mobilidade em Angola.</p>
-        <div style="display: flex; gap: 1rem; justify-content: center; position: relative;">
-          <a href="#" class="btn btn-gold btn-lg">
-            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
-            App Store
-          </a>
-          <a href="#" class="btn btn-secondary btn-lg" style="border-color: rgba(255,255,255,0.3); color: white;">
-            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M3.18 23.76c-.36-.17-.58-.52-.58-.92V1.16c0-.4.22-.75.58-.92l11.07 11.76L3.18 23.76zm.82-22.4L14.68 12 4 22.64V1.36zm16.16 9.52L17.3 9.3l-2.18 2.7 2.18 2.7 2.86-1.58c.54-.3.54-1.04 0-1.34zM4.82 1.04L15.5 11.3 5.64.36 4.82 1.04zM15.5 12.7L4.82 22.96l.82.68L15.5 12.7z"/></svg>
-            Google Play
-          </a>
+    <!-- FEATURES -->
+    <section class="section section-dark" id="features" aria-labelledby="features-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="tag">Funcionalidades</span>
+          <h2 id="features-heading">Tudo o que precisas, numa app</h2>
+          <p>Do Bumbá ao aluguer de viaturas, passando pela carteira digital com Multicaixa Express.</p>
+        </div>
+        <div class="features-grid">
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">🚗</div>
+            <h3>Bumbá (Corrida)</h3>
+            <p>Pede uma corrida em segundos. O motorista mais próximo chega até ti com preço estimado antes de confirmar. Sem surpresas.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">🔑</div>
+            <h3>Aluguer P2P</h3>
+            <p>Aluga uma viatura directamente de proprietários verificados. SUVs, sedans e pick-ups disponíveis por dia ou semana.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">💳</div>
+            <h3>Carteira Digital</h3>
+            <p>Recarrega via Multicaixa Express ou Unitel Money. Paga corridas e alugueres sem dinheiro físico. Tudo em Kwanzas.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">🛡️</div>
+            <h3>Segurança Total</h3>
+            <p>Verificação de BI com selfie, rastreamento GPS em tempo real, geofencing anti-roubo e botão de emergência SOS.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">🌍</div>
+            <h3>4 Idiomas</h3>
+            <p>Disponível em Português, Inglês, Chinês e Francês. Pensado para angolanos e a comunidade de expatriados.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">📊</div>
+            <h3>Painel do Proprietário</h3>
+            <p>Gere a tua frota, acompanha rendimentos, aprova reservas e controla o estado das tuas viaturas em tempo real.</p>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section" id="como-funciona" aria-labelledby="steps-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="tag">Como Funciona</span>
+          <h2 id="steps-heading">Em 4 passos simples</h2>
+          <p>Do download à primeira viagem em menos de 5 minutos.</p>
+        </div>
+        <ol class="steps-grid" aria-label="Passos para começar">
+          <li class="step-card reveal">
+            <div class="step-number" aria-hidden="true">1</div>
+            <h3>Descarrega a App</h3>
+            <p>Disponível na App Store e Google Play. Registo rápido com número angolano.</p>
+          </li>
+          <li class="step-card reveal">
+            <div class="step-number" aria-hidden="true">2</div>
+            <h3>Verifica a Identidade</h3>
+            <p>Envia foto do BI (frente e verso) e uma selfie para garantir a segurança de todos.</p>
+          </li>
+          <li class="step-card reveal">
+            <div class="step-number" aria-hidden="true">3</div>
+            <h3>Recarrega a Carteira</h3>
+            <p>Adiciona saldo via Multicaixa Express ou Unitel Money. Sem cartão de crédito necessário.</p>
+          </li>
+          <li class="step-card reveal">
+            <div class="step-number" aria-hidden="true">4</div>
+            <h3>Bumbá!</h3>
+            <p>Pede uma corrida ou aluga uma viatura. O preço é mostrado antes de confirmar.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section section-dark" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="tag">Depoimentos</span>
+          <h2 id="testimonials-heading">O que dizem os nossos utilizadores</h2>
+        </div>
+        <div class="testimonials-grid">
+          <article class="testimonial-card reveal">
+            <div class="stars" aria-label="Avaliação: 5 estrelas">★★★★★</div>
+            <blockquote>"Finalmente uma app angolana que funciona! O Bumbá chega rápido e pago com Multicaixa Express sem complicações."</blockquote>
+            <div class="testimonial-author">
+              <div class="avatar" aria-hidden="true">AM</div>
+              <div>
+                <div class="name">Ana Maria</div>
+                <div class="role">Passageira, Talatona</div>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial-card reveal">
+            <div class="stars" aria-label="Avaliação: 5 estrelas">★★★★★</div>
+            <blockquote>"Coloquei o meu Hilux para alugar e já recuperei o investimento em 3 meses. A verificação de identidade dá-me segurança."</blockquote>
+            <div class="testimonial-author">
+              <div class="avatar" aria-hidden="true">JC</div>
+              <div>
+                <div class="name">João Carlos</div>
+                <div class="role">Proprietário, Viana</div>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial-card reveal">
+            <div class="stars" aria-label="Avaliação: 5 estrelas">★★★★★</div>
+            <blockquote>"Trabalho quando quero e ganho mais de 40 mil Kz por dia. A comissão de 10% é a mais baixa do mercado."</blockquote>
+            <div class="testimonial-author">
+              <div class="avatar" aria-hidden="true">PM</div>
+              <div>
+                <div class="name">Pedro Manuel</div>
+                <div class="role">Motorista, Luanda</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA DOWNLOAD -->
+    <section class="section" id="download" aria-labelledby="download-heading">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <h2 id="download-heading">Pronto para começar?</h2>
+          <p>Descarrega o N'Gola Drive agora e faz parte da revolução da mobilidade em Angola.</p>
+          <div class="cta-buttons">
+            <a href="#" class="btn btn-gold btn-lg" aria-label="Descarregar na App Store">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+              App Store
+            </a>
+            <a href="#" class="btn btn-secondary btn-lg" style="border-color: rgba(255,255,255,0.3); color: white;" aria-label="Descarregar no Google Play">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.18 23.76c-.36-.17-.58-.52-.58-.92V1.16c0-.4.22-.75.58-.92l11.07 11.76L3.18 23.76zm.82-22.4L14.68 12 4 22.64V1.36zm16.16 9.52L17.3 9.3l-2.18 2.7 2.18 2.7 2.86-1.58c.54-.3.54-1.04 0-1.34zM4.82 1.04L15.5 11.3 5.64.36 4.82 1.04zM15.5 12.7L4.82 22.96l.82.68L15.5 12.7z"/></svg>
+              Google Play
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <!-- FOOTER -->
-  <footer class="footer">
+  <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="index.html" class="navbar-logo" style="margin-bottom: 0.5rem;">
-            <div class="logo-icon">NG</div>
+          <a href="index.html" class="navbar-logo" aria-label="N'Gola Drive — Página inicial">
+            <div class="logo-icon" aria-hidden="true">NG</div>
             <div class="logo-text">N'Gola <span>Drive</span></div>
           </a>
           <p>A primeira super-app angolana de mobilidade e aluguer de carros P2P. Feita em Angola, para Angola.</p>
@@ -258,12 +356,12 @@
       </div>
       <div class="footer-bottom">
         <p>&copy; 2026 N'Gola Drive. Todos os direitos reservados. Luanda, Angola.</p>
-        <div class="footer-social">
-          <a href="#" title="Facebook"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
-          <a href="#" title="Instagram"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
-          <a href="#" title="WhatsApp"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
-          <a href="#" title="TikTok"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
-        </div>
+        <nav class="footer-social" aria-label="Redes sociais">
+          <a href="#" title="Facebook" aria-label="N'Gola Drive no Facebook"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+          <a href="#" title="Instagram" aria-label="N'Gola Drive no Instagram"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+          <a href="#" title="WhatsApp" aria-label="N'Gola Drive no WhatsApp"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+          <a href="#" title="TikTok" aria-label="N'Gola Drive no TikTok"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
+        </nav>
       </div>
     </div>
   </footer>
