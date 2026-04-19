@@ -284,6 +284,114 @@ h1, h2, h3, h4, h5, h6 {
 }
 .hero-image { display: none; }
 
+/* === PHONE ANIMATION === */
+@keyframes phone-float {
+  0%, 100% { transform: translateY(0px) rotate(-2deg); }
+  50%       { transform: translateY(-22px) rotate(-2deg); }
+}
+@keyframes glow-pulse {
+  0%, 100% { opacity: 0.5; transform: scale(1); }
+  50%       { opacity: 1;   transform: scale(1.12); }
+}
+@keyframes ring-spin {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to   { transform: translate(-50%, -50%) rotate(360deg); }
+}
+@keyframes ring-spin-rev {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to   { transform: translate(-50%, -50%) rotate(-360deg); }
+}
+@keyframes dot-orbit {
+  from { transform: rotate(0deg) translateX(160px) rotate(0deg); }
+  to   { transform: rotate(360deg) translateX(160px) rotate(-360deg); }
+}
+@keyframes dot-orbit-rev {
+  from { transform: rotate(0deg) translateX(110px) rotate(0deg); }
+  to   { transform: rotate(-360deg) translateX(110px) rotate(360deg); }
+}
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.phone-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  height: 560px;
+}
+
+/* Glow base */
+.phone-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: -40px;
+  background: radial-gradient(ellipse at center, rgba(196,30,36,0.35) 0%, transparent 70%);
+  border-radius: 50%;
+  animation: glow-pulse 3s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* Outer dashed orbit ring */
+.phone-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 380px; height: 380px;
+  border: 1.5px dashed rgba(212, 168, 67, 0.25);
+  border-radius: 50%;
+  animation: ring-spin 18s linear infinite;
+  pointer-events: none;
+}
+
+/* Inner solid orbit ring */
+.phone-ring-inner {
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 280px; height: 280px;
+  border: 1px solid rgba(196, 30, 36, 0.2);
+  border-top-color: rgba(196, 30, 36, 0.6);
+  border-radius: 50%;
+  animation: ring-spin-rev 10s linear infinite;
+  pointer-events: none;
+}
+
+/* Orbiting gold dot */
+.phone-dot-gold {
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 10px; height: 10px;
+  background: var(--gold);
+  border-radius: 50%;
+  box-shadow: 0 0 12px rgba(212,168,67,0.8);
+  animation: dot-orbit 18s linear infinite;
+  pointer-events: none;
+}
+
+/* Orbiting red dot */
+.phone-dot-red {
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 7px; height: 7px;
+  background: var(--red);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(196,30,36,0.9);
+  animation: dot-orbit-rev 10s linear infinite;
+  pointer-events: none;
+}
+
+.phone-wrapper img {
+  position: relative;
+  z-index: 2;
+  animation: phone-float 5s ease-in-out infinite;
+  filter: drop-shadow(0 30px 60px rgba(196, 30, 36, 0.4))
+          drop-shadow(0 0 40px rgba(212, 168, 67, 0.15));
+  transform-origin: center bottom;
+  will-change: transform;
+}
+
 /* === APP MOCKUP (CSS) === */
 .app-mockup-css {
   position: relative;
@@ -936,11 +1044,6 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .hero-image img {
-    max-height: 600px;
-    width: auto;
-    filter: drop-shadow(0 20px 60px rgba(196, 30, 36, 0.3));
   }
 
   .section { padding: 6rem 0; }
